@@ -1,0 +1,26 @@
+<h1>{{title}}</h1>
+<h2>!!Using NgClass as String!!</h2>
+<p [ngClass]="['one','two']">using ngclass with string example</p>
+
+<p [ngClass]="'one two'">using ngclass with string example</p>
+<div *ngFor="let user of users" [ngClass]="'three four'"> 
+{{user}}
+</div>
+<p [ngClass]="{'one':true,'three':false}">example using ng class as object</p>
+<div [ngClass]="getCSSClass('mode')">
+  <h2>!!example using ngclass using component methed!!</h2>
+</div>
+
+<h1>{{title}}</h1>
+<h2>!!Using NgClass as String!!</h2>
+
+<!-- Using an array for ngClass -->
+<p [ngClass]="['one', 'three']">Using NgClass with string example</p>
+
+<!-- Using an array for ngClass (alternative syntax) -->
+<p [ngClass]="'one two'">Using NgClass with string example</p>
+
+<!-- Using ngClass dynamically within *ngFor -->
+<div *ngFor="let user of users" [ngClass]="'three four'">
+  {{user}}
+</div>
